@@ -1,4 +1,4 @@
-#Toko adalah aplikasi online shop yang dibuat menggunakan SQL.
+ Project Kelompok 2B adalah aplikasi online shop yang dibuat menggunakan SQL.
 
 Database toko memiliki fungsi menampilkan barang yang tersedia, menghapus barang yang sudah
 dibeli,menambahkan stock barang, dan mencari data yang sudah dimasukan dalam database yang dibuat.
