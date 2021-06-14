@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 14, 2021 at 03:54 AM
+-- Generation Time: Jun 14, 2021 at 04:15 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -84,8 +84,16 @@ CREATE TABLE `transaksi` (
   `nama_kurir` varchar(99) NOT NULL,
   `ongkir` bigint(20) NOT NULL,
   `total_harga` bigint(20) NOT NULL,
-  `tgl_transaksi` datetime NOT NULL DEFAULT current_timestamp()
+  `tgl_transaksi` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `transaksi`
+--
+
+INSERT INTO `transaksi` (`no_transaksi`, `id`, `id_barang`, `jumlah_beli`, `nama_kurir`, `ongkir`, `total_harga`, `tgl_transaksi`) VALUES
+(1, 1, 2, 3, 'Ydui Premana', 2221, 1212312, NULL),
+(2, 1, 2, 4, 'Ydui Premana', 22212, 12123122, '2021-06-14 09:14:32');
 
 --
 -- Indexes for dumped tables
@@ -132,7 +140,7 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `no_transaksi` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `no_transaksi` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
