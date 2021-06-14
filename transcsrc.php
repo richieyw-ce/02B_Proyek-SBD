@@ -72,7 +72,7 @@ if(isset($_GET['cari'])){
         $results = $conn->query($data);
 	
 	while($row = $results->fetch_assoc()) {
-        echo "<tr><td>".$row["no_transaki"]."</td><td>".$row["id"]."</td><td>".$row["id_barang"]."</td><td>".$row["jumlah_beli"]."</td><td>".$row["nama_kurir"]."</td><td>".$row["ongkir"]."</td><td>".$row["total_harga"]."</td><td>".$row["tgl_transaksi"]."</td></tr>";
+        echo "<tr><td>".$row["no_transaksi"]."</td><td>".$row["id"]."</td><td>".$row["id_barang"]."</td><td>".$row["jumlah_beli"]."</td><td>".$row["nama_kurir"]."</td><td>".$row["ongkir"]."</td><td>".$row["total_harga"]."</td><td>".$row["tgl_transaksi"]."</td></tr>";
         }
 	?>	
 </table>
